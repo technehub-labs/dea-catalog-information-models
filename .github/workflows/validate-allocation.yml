@@ -1,0 +1,17 @@
+name: validate-allocation
+
+# Pins this catalog's allocation declaration (metamodel-pointer.yaml)
+# against the OpenDEAM root model. Drift fails CI.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  allocation:
+    uses: technehub-labs/dea-architecture-framework/.github/workflows/validate-against-model.yml@v0.9.0
+    with:
+      model_ref: v0.9.0
+      pointer_file: metamodel-pointer.yaml
