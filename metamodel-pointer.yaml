@@ -1,0 +1,8 @@
+abbreviation: IM
+description: Reference catalog for Information Model entities. Bootstrapped from dea-metaframework/tools/catalog-repo-template/.
+id: dea:catalog-information-models
+metamodel_version: 1.0.0
+name: Information Model
+owner: TechNeHub Labs
+status: active
+version: 0.1.0
