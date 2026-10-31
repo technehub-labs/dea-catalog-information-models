@@ -61,3 +61,11 @@ Initial population is evidence-gated. Candidate seed sources are named in
 the population CR; where none are verifiable today, the catalogue stays at
 zero canonical records with this section recording why and what would
 unlock population.
+
+**Landed (CR-IM-CAT-02):** candidate sources — the domain-ontology pillar
+(`dea-catalog-ontologies`, first ontology = canonical candidate, model_form
+ontology), business-object attribute models (U-1 follow-on), ESA/EO
+artifacts, and integration-interface payload schemas. Admission requires a
+cited producing artifact, a declared `model_form`, and the boundary test
+(specifies structure via `dea:structures`; not a class, a consumable form,
+or a persistent structure).
