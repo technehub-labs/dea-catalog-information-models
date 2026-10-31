@@ -1,8 +1,32 @@
-abbreviation: IM
-description: Reference catalog for Information Model entities. Bootstrapped from dea-metaframework/tools/catalog-repo-template/.
+# Metamodel Pointer — Information Model
+#
+# Two consumers, two blocks (see FOUNDATIONS §5):
+#   - the top-level identity keys are consumed by the vendored
+#     regenerate_catalog.py to build CATALOG.yaml's catalog block;
+#   - the `metamodel:` allocation block is validated by
+#     dea-architecture-framework validate-against-model.yml
+#     against the pinned root-model ref (v0.9.0), and asserted
+#     locally by scripts/check_pointer.py.
+#
+# Allocation changes go through the root model, not this file.
 id: dea:catalog-information-models
-metamodel_version: 1.0.0
 name: Information Model
-owner: TechNeHub Labs
-status: active
+abbreviation: IM
 version: 0.1.0
+status: active
+metamodel_version: 1.0.0
+owner: TechNeHub Labs
+description: |
+  A formal model that specifies the structure, semantics, and constraints of information for a domain - the conceptual or logical blueprint from which Data Entities are shaped and Information Assets take form. Distinct from Information Class (the sensitivity/regulatory band) and Information Asset (the consumable form).
+metamodel:
+  building_block: L4-information-knowledge
+  class_alias: IM
+  entity_id: dea:entity-information-model
+  layer: L4
+  version: v0.9.0
+  viewer_url: https://technehub-labs.github.io/metamodel/?entity=IM
+links:
+  metamodel_repo: https://github.com/technehub-labs/dea-metamodel
+  root_model: https://github.com/technehub-labs/dea-architecture-framework
+  viewer: https://technehub-labs.github.io/metamodel/?entity=IM
+  github: https://github.com/technehub-labs/dea-catalog-information-models
