@@ -39,7 +39,6 @@ constraints:
 sources:
 - kind: system-of-record
   reference: dea-catalog-business-objects (canonical record objects:object-customer-2qvphc)
-- kind: published-document
-  reference: TMF SID Customer domain (Customer, CustomerAccount classes); TMF629 Customer Management API
 - kind: repository-path
   reference: models/customer.yaml
+chain_position: party

@@ -75,7 +75,7 @@ or a persistent structure).
 Unlike every sibling catalog, information models did not exist as formal artifacts at stand-up — evidence must be **established**, not just harvested. Three channels, in priority order:
 
 1. **Author-in-repo (primary).** Business-object attribute models for the canonical Business Objects: authored at `models/<slug>.yaml`, citing the canonical BO record as provenance and asserting `represents` onto it. The authoring CR is the ladder's start.
-2. **External anchoring (corroboration).** Attribute sets are cross-checked against a published external authority where the domain has one (TM Forum SID / Open APIs for the telecom-flavored domains). Where none covers, corroboration is marked internal-only — never faked.
+2. **Chain corroboration (internal).** Attribute sets are corroborated against the canonical Business Object definition and the sibling models along the Agreement → Offering → Product → Service → Resource → Entity chain (each model records its chain position; chain neighbours are reviewed together). External published authorities may be cited as descriptive references, never as the corroboration basis.
 3. **Harvest sweep (opportunistic).** Model-shaped artifacts appearing in org repos (payload schemas, DDL, ontologies) are census candidates for `model_form: schema|ontology` records and the first `dea:structures` assertions.
 
 The `dea:structures` edge lights up when a downstream DataEntity or InformationAsset is stood up shaped by a model record. The model-artifact contract is normative in RECORD-STANDARD.md section 4 (two-part evidence: provenance source + committed artifact; Gate 7 enforces).

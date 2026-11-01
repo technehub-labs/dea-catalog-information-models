@@ -44,7 +44,6 @@ constraints:
 sources:
 - kind: system-of-record
   reference: dea-catalog-business-objects (canonical record objects:object-invoice-z3fwgb)
-- kind: published-document
-  reference: TMF SID Billing domain (Bill, Invoice classes); TMF678 Customer Bill Management API
 - kind: repository-path
   reference: models/invoice.yaml
+chain_position: entity
