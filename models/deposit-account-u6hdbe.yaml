@@ -1,0 +1,30 @@
+model: deposit-account-u6hdbe
+record: dea:information-model-deposit-account-u6hdbe
+title: Account Information Model
+model_form: conceptual
+model_scope: Finance & Accounting domain
+represents: objects:object-deposit-account-u6hdbe
+chain_stage: financial
+attributes:
+- name: depositaccountu6hdbeId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the account.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the account where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the account (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Finance & Accounting domain domain, operate stage; object class
+    financial-instrument.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-deposit-account-u6hdbe)
+- kind: repository-path
+  reference: models/deposit-account-u6hdbe.yaml

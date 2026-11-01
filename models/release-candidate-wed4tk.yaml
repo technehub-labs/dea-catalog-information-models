@@ -1,0 +1,30 @@
+model: release-candidate-wed4tk
+record: dea:information-model-release-candidate-wed4tk
+title: Release Candidate Information Model
+model_form: conceptual
+model_scope: Enablement & Operations domain
+represents: objects:object-release-candidate-wed4tk
+chain_stage: entity-support
+attributes:
+- name: releasecandidatewed4tkId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the release candidate.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the release candidate where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the release candidate (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Enablement & Operations domain domain, build stage; object class
+    technology-control.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-release-candidate-wed4tk)
+- kind: repository-path
+  reference: models/release-candidate-wed4tk.yaml

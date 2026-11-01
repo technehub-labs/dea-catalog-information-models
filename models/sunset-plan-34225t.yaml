@@ -1,0 +1,29 @@
+model: sunset-plan-34225t
+record: dea:information-model-sunset-plan-34225t
+title: Sunset Plan Information Model
+model_form: conceptual
+model_scope: Product & Value domain
+represents: objects:object-sunset-plan-34225t
+chain_stage: party-lifecycle
+attributes:
+- name: sunsetplan34225tId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the sunset plan.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the sunset plan where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the sunset plan (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Product & Value domain domain, retire stage; object class work-item.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-sunset-plan-34225t)
+- kind: repository-path
+  reference: models/sunset-plan-34225t.yaml

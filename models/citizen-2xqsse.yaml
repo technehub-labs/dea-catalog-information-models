@@ -1,0 +1,30 @@
+model: citizen-2xqsse
+record: dea:information-model-citizen-2xqsse
+title: Citizen Information Model
+model_form: conceptual
+model_scope: Party & Relationship domain
+represents: objects:object-citizen-2xqsse
+chain_stage: party-lifecycle
+attributes:
+- name: citizen2xqsseId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the citizen.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the citizen where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the citizen (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Party & Relationship domain domain, operate stage; object class
+    party.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-citizen-2xqsse)
+- kind: repository-path
+  reference: models/citizen-2xqsse.yaml

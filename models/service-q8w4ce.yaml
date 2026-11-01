@@ -1,0 +1,33 @@
+model: service-q8w4ce
+record: dea:information-model-service-q8w4ce
+title: Service Information Model
+model_form: conceptual
+model_scope: Product & Value domain
+represents: objects:object-service-q8w4ce
+chain_stage: offering
+attributes:
+- name: serviceq8w4ceId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the service.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the service where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the service (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Product & Value domain domain, operate stage; object class offering.'
+- name: productRefs
+  type: reference
+  cardinality: 0..*
+  definition: Product(s) this offering packages and prices.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-service-q8w4ce)
+- kind: repository-path
+  reference: models/service-q8w4ce.yaml

@@ -1,0 +1,30 @@
+model: member-vbxqke
+record: dea:information-model-member-vbxqke
+title: Member Information Model
+model_form: conceptual
+model_scope: Party & Relationship domain
+represents: objects:object-member-vbxqke
+chain_stage: party-lifecycle
+attributes:
+- name: membervbxqkeId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the member.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the member where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the member (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Party & Relationship domain domain, operate stage; object class
+    party.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-member-vbxqke)
+- kind: repository-path
+  reference: models/member-vbxqke.yaml

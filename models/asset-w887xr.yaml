@@ -1,0 +1,30 @@
+model: asset-w887xr
+record: dea:information-model-asset-w887xr
+title: Asset Information Model
+model_form: conceptual
+model_scope: Finance & Accounting domain
+represents: objects:object-asset-w887xr
+chain_stage: financial
+attributes:
+- name: assetw887xrId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the asset.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the asset where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the asset (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Finance & Accounting domain domain, operate stage; object class
+    financial-instrument.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-asset-w887xr)
+- kind: repository-path
+  reference: models/asset-w887xr.yaml

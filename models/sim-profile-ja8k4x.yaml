@@ -1,0 +1,30 @@
+model: sim-profile-ja8k4x
+record: dea:information-model-sim-profile-ja8k4x
+title: SIM Profile Information Model
+model_form: conceptual
+model_scope: Party & Relationship domain
+represents: objects:object-sim-profile-ja8k4x
+chain_stage: entity-support
+attributes:
+- name: simprofileja8k4xId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the sim profile.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the sim profile where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the sim profile (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Party & Relationship domain domain, activate stage; object class
+    technology-control.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-sim-profile-ja8k4x)
+- kind: repository-path
+  reference: models/sim-profile-ja8k4x.yaml

@@ -1,0 +1,33 @@
+model: stock-keeping-unit-x6rq8r
+record: dea:information-model-stock-keeping-unit-x6rq8r
+title: SKU Information Model
+model_form: conceptual
+model_scope: Product & Value domain
+represents: objects:object-stock-keeping-unit-x6rq8r
+chain_stage: offering
+attributes:
+- name: stockkeepingunitx6rq8rId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the sku.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the sku where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the sku (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Product & Value domain domain, operate stage; object class offering.'
+- name: productRefs
+  type: reference
+  cardinality: 0..*
+  definition: Product(s) this offering packages and prices.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-stock-keeping-unit-x6rq8r)
+- kind: repository-path
+  reference: models/stock-keeping-unit-x6rq8r.yaml

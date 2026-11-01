@@ -1,0 +1,30 @@
+model: configuration-item-tsn3ex
+record: dea:information-model-configuration-item-tsn3ex
+title: Configuration Item Information Model
+model_form: conceptual
+model_scope: Enablement & Operations domain
+represents: objects:object-configuration-item-tsn3ex
+chain_stage: entity-support
+attributes:
+- name: configurationitemtsn3exId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the configuration item.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the configuration item where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the configuration item (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Enablement & Operations domain domain, operate stage; object class
+    technology-control.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-configuration-item-tsn3ex)
+- kind: repository-path
+  reference: models/configuration-item-tsn3ex.yaml

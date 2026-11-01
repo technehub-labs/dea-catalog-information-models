@@ -1,0 +1,34 @@
+model: policy-nd2t4y
+record: dea:information-model-policy-nd2t4y
+title: Policy Information Model
+model_form: conceptual
+model_scope: Governance & Existence domain
+represents: objects:object-policy-nd2t4y
+chain_stage: agreement
+attributes:
+- name: policynd2t4yId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the policy.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the policy where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the policy (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Governance & Existence domain domain, operate stage; object class
+    legal-instrument.'
+- name: counterpartyRef
+  type: reference
+  cardinality: 1..1
+  definition: The party(ies) bound by this agreement.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-policy-nd2t4y)
+- kind: repository-path
+  reference: models/policy-nd2t4y.yaml

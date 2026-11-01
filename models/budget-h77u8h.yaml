@@ -1,0 +1,30 @@
+model: budget-h77u8h
+record: dea:information-model-budget-h77u8h
+title: Budget Information Model
+model_form: conceptual
+model_scope: Finance & Accounting domain
+represents: objects:object-budget-h77u8h
+chain_stage: financial
+attributes:
+- name: budgeth77u8hId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the budget.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the budget where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the budget (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Finance & Accounting domain domain, operate stage; object class
+    financial-instrument.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-budget-h77u8h)
+- kind: repository-path
+  reference: models/budget-h77u8h.yaml

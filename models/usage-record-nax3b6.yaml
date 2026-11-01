@@ -1,0 +1,38 @@
+model: usage-record-nax3b6
+record: dea:information-model-usage-record-nax3b6
+title: Usage Record Information Model
+model_form: conceptual
+model_scope: Finance & Accounting domain
+represents: objects:object-usage-record-nax3b6
+chain_stage: service-delivery
+attributes:
+- name: usagerecordnax3b6Id
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the usage record.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the usage record where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the usage record (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Finance & Accounting domain domain, operate stage; object class
+    transaction.'
+- name: customerRef
+  type: reference
+  cardinality: 0..1
+  definition: The customer this delivery record is for, where customer-facing.
+- name: resourceRefs
+  type: reference
+  cardinality: 0..*
+  definition: Resource(s) used or affected by this delivery record.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-usage-record-nax3b6)
+- kind: repository-path
+  reference: models/usage-record-nax3b6.yaml

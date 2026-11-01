@@ -1,0 +1,30 @@
+model: application-eewde8
+record: dea:information-model-application-eewde8
+title: Application Information Model
+model_form: conceptual
+model_scope: Enablement & Operations domain
+represents: objects:object-application-eewde8
+chain_stage: entity-support
+attributes:
+- name: applicationeewde8Id
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the application.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the application where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the application (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Enablement & Operations domain domain, operate stage; object class
+    technology-control.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-application-eewde8)
+- kind: repository-path
+  reference: models/application-eewde8.yaml

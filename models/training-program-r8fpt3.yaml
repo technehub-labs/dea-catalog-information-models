@@ -1,0 +1,30 @@
+model: training-program-r8fpt3
+record: dea:information-model-training-program-r8fpt3
+title: Training Program Information Model
+model_form: conceptual
+model_scope: Agency & Organization domain
+represents: objects:object-training-program-r8fpt3
+chain_stage: party-lifecycle
+attributes:
+- name: trainingprogramr8fpt3Id
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the training program.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the training program where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the training program (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Agency & Organization domain domain, build stage; object class
+    work-item.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-training-program-r8fpt3)
+- kind: repository-path
+  reference: models/training-program-r8fpt3.yaml

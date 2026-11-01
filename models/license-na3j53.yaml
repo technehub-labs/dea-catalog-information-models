@@ -1,0 +1,34 @@
+model: license-na3j53
+record: dea:information-model-license-na3j53
+title: License Information Model
+model_form: conceptual
+model_scope: Governance & Existence domain
+represents: objects:object-license-na3j53
+chain_stage: agreement
+attributes:
+- name: licensena3j53Id
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the license.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the license where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the license (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Governance & Existence domain domain, operate stage; object class
+    legal-instrument.'
+- name: counterpartyRef
+  type: reference
+  cardinality: 1..1
+  definition: The party(ies) bound by this agreement.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-license-na3j53)
+- kind: repository-path
+  reference: models/license-na3j53.yaml

@@ -1,0 +1,30 @@
+model: journal-entry-khck7r
+record: dea:information-model-journal-entry-khck7r
+title: Journal Entry Information Model
+model_form: conceptual
+model_scope: Finance & Accounting domain
+represents: objects:object-journal-entry-khck7r
+chain_stage: financial
+attributes:
+- name: journalentrykhck7rId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the journal entry.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the journal entry where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the journal entry (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Finance & Accounting domain domain, operate stage; object class
+    financial-instrument.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-journal-entry-khck7r)
+- kind: repository-path
+  reference: models/journal-entry-khck7r.yaml

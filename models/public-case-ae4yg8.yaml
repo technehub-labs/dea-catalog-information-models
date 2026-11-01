@@ -1,0 +1,38 @@
+model: public-case-ae4yg8
+record: dea:information-model-public-case-ae4yg8
+title: Case Information Model
+model_form: conceptual
+model_scope: Governance & Existence domain
+represents: objects:object-public-case-ae4yg8
+chain_stage: service-delivery
+attributes:
+- name: publiccaseae4yg8Id
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the case.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the case where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the case (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Governance & Existence domain domain, operate stage; object class
+    transaction.'
+- name: customerRef
+  type: reference
+  cardinality: 0..1
+  definition: The customer this delivery record is for, where customer-facing.
+- name: resourceRefs
+  type: reference
+  cardinality: 0..*
+  definition: Resource(s) used or affected by this delivery record.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-public-case-ae4yg8)
+- kind: repository-path
+  reference: models/public-case-ae4yg8.yaml

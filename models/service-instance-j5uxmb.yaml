@@ -1,0 +1,38 @@
+model: service-instance-j5uxmb
+record: dea:information-model-service-instance-j5uxmb
+title: Service Instance Information Model
+model_form: conceptual
+model_scope: Enablement & Operations domain
+represents: objects:object-service-instance-j5uxmb
+chain_stage: service-delivery
+attributes:
+- name: serviceinstancej5uxmbId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the service instance.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the service instance where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the service instance (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Enablement & Operations domain domain, operate stage; object class
+    transaction.'
+- name: customerRef
+  type: reference
+  cardinality: 0..1
+  definition: The customer this delivery record is for, where customer-facing.
+- name: resourceRefs
+  type: reference
+  cardinality: 0..*
+  definition: Resource(s) used or affected by this delivery record.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-service-instance-j5uxmb)
+- kind: repository-path
+  reference: models/service-instance-j5uxmb.yaml

@@ -1,0 +1,30 @@
+model: incident-wudf9s
+record: dea:information-model-incident-wudf9s
+title: Incident Information Model
+model_form: conceptual
+model_scope: Enablement & Operations domain
+represents: objects:object-incident-wudf9s
+chain_stage: entity-support
+attributes:
+- name: incidentwudf9sId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the incident.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the incident where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the incident (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Enablement & Operations domain domain, operate stage; object class
+    technology-control.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-incident-wudf9s)
+- kind: repository-path
+  reference: models/incident-wudf9s.yaml
