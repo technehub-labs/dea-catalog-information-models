@@ -1,0 +1,30 @@
+model: feature-flag-p5gzf7
+record: dea:information-model-feature-flag-p5gzf7
+title: Feature Flag Information Model
+model_form: conceptual
+model_scope: Enablement & Operations domain
+represents: objects:object-feature-flag-p5gzf7
+chain_stage: entity-support
+attributes:
+- name: featureflagp5gzf7Id
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the feature flag.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the feature flag where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the feature flag (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Enablement & Operations domain domain, operate stage; object class
+    technology-control.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-feature-flag-p5gzf7)
+- kind: repository-path
+  reference: models/feature-flag-p5gzf7.yaml

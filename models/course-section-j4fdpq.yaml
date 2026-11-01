@@ -1,0 +1,38 @@
+model: course-section-j4fdpq
+record: dea:information-model-course-section-j4fdpq
+title: Course Section Information Model
+model_form: conceptual
+model_scope: Enablement & Operations domain
+represents: objects:object-course-section-j4fdpq
+chain_stage: service-delivery
+attributes:
+- name: coursesectionj4fdpqId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the course section.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the course section where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the course section (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Enablement & Operations domain domain, operate stage; object class
+    transaction.'
+- name: customerRef
+  type: reference
+  cardinality: 0..1
+  definition: The customer this delivery record is for, where customer-facing.
+- name: resourceRefs
+  type: reference
+  cardinality: 0..*
+  definition: Resource(s) used or affected by this delivery record.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-course-section-j4fdpq)
+- kind: repository-path
+  reference: models/course-section-j4fdpq.yaml

@@ -1,0 +1,30 @@
+model: prepaid-balance-k65673
+record: dea:information-model-prepaid-balance-k65673
+title: Prepaid Balance Information Model
+model_form: conceptual
+model_scope: Finance & Accounting domain
+represents: objects:object-prepaid-balance-k65673
+chain_stage: financial
+attributes:
+- name: prepaidbalancek65673Id
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the prepaid balance.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the prepaid balance where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the prepaid balance (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Finance & Accounting domain domain, operate stage; object class
+    financial-instrument.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-prepaid-balance-k65673)
+- kind: repository-path
+  reference: models/prepaid-balance-k65673.yaml

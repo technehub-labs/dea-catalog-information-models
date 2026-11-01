@@ -1,0 +1,30 @@
+model: forecast-um3az3
+record: dea:information-model-forecast-um3az3
+title: Forecast Information Model
+model_form: conceptual
+model_scope: Finance & Accounting domain
+represents: objects:object-forecast-um3az3
+chain_stage: financial
+attributes:
+- name: forecastum3az3Id
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the forecast.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the forecast where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the forecast (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Finance & Accounting domain domain, operate stage; object class
+    financial-instrument.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-forecast-um3az3)
+- kind: repository-path
+  reference: models/forecast-um3az3.yaml

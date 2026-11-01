@@ -1,0 +1,38 @@
+model: care-encounter-8enzdc
+record: dea:information-model-care-encounter-8enzdc
+title: Treatment Information Model
+model_form: conceptual
+model_scope: Enablement & Operations domain
+represents: objects:object-care-encounter-8enzdc
+chain_stage: service-delivery
+attributes:
+- name: careencounter8enzdcId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the treatment.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the treatment where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the treatment (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Enablement & Operations domain domain, operate stage; object class
+    transaction.'
+- name: customerRef
+  type: reference
+  cardinality: 0..1
+  definition: The customer this delivery record is for, where customer-facing.
+- name: resourceRefs
+  type: reference
+  cardinality: 0..*
+  definition: Resource(s) used or affected by this delivery record.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-care-encounter-8enzdc)
+- kind: repository-path
+  reference: models/care-encounter-8enzdc.yaml

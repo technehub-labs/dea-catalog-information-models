@@ -1,0 +1,30 @@
+model: candidate-party-s8q2mk
+record: dea:information-model-candidate-party-s8q2mk
+title: Candidate Information Model
+model_form: conceptual
+model_scope: Party & Relationship domain
+represents: objects:object-candidate-party-s8q2mk
+chain_stage: party-lifecycle
+attributes:
+- name: candidatepartys8q2mkId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the candidate.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the candidate where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the candidate (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Party & Relationship domain domain, conceive stage; object class
+    party.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-candidate-party-s8q2mk)
+- kind: repository-path
+  reference: models/candidate-party-s8q2mk.yaml

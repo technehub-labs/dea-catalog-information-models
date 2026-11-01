@@ -1,0 +1,64 @@
+id: dea:information-model-performance-review-k3k7n6
+type: InformationModel
+name: Performance Review Information Model
+description: 'The conceptual information model of the Performance Review business object: the attributes,
+  lifecycle states, and classification that specify performance review information for the enterprise,
+  per the canonical Business Object record. Model scope: Strategy & Direction domain.'
+version: 1.0.0
+lifecycle_status: active
+model_form: conceptual
+model_scope: Strategy & Direction domain
+tags:
+- domain-coverage
+- cr-im-cat-05
+- business-object-model
+- chain-party-lifecycle
+evidence:
+  sources:
+  - kind: system-of-record
+    reference: dea-catalog-business-objects (canonical record objects:object-performance-review-k3k7n6)
+  - kind: repository-path
+    reference: models/performance-review-k3k7n6.yaml
+  rationale: 'Two-part evidence: provenance is the canonical Business Object record (objects:object-performance-review-k3k7n6;
+    definition, state history, capabilities/processes references are the semantic source); the committed
+    artifact at models/performance-review-k3k7n6.yaml is the model itself. ECF-domain scoping: Strategy
+    & Direction domain; chain stage: party-lifecycle.'
+provenance:
+  ladder_passage:
+  - stage: candidate
+    date: '2026-11-01'
+    actor: Emmanuel A. Otchere
+  - stage: corroborated
+    date: '2026-11-01'
+    actor: Emmanuel A. Otchere
+  - stage: reviewed
+    date: '2026-11-01'
+    actor: Emmanuel A. Otchere
+  - stage: canonical
+    date: '2026-11-01'
+    actor: Emmanuel A. Otchere
+governance:
+  functional_owner: Emmanuel A. Otchere
+  steward: Emmanuel A. Otchere
+  approval_status: approved
+  review_date: '2026-11-01'
+  source_and_evidence: Domain-coverage batch CR-IM-CAT-05 (Strategy & Direction domain); sources cited
+    under evidence.
+relationships:
+- id: dea:relationship-performance-review-k3k7n6-represents
+  source_id: dea:information-model-performance-review-k3k7n6
+  target_id: objects:object-performance-review-k3k7n6
+  relationship_type: represents
+  direction: source-to-target
+  rationale: The model specifies the information structure of the Performance Review business object (canonical
+    record objects:object-performance-review-k3k7n6).
+  provenance:
+    type: manual
+    asserted_by: Emmanuel A. Otchere
+    asserted_at: '2026-11-01'
+    verification_status: verified
+metadata:
+  created_at: '2026-11-01'
+  updated_at: '2026-11-01'
+  created_by: Emmanuel A. Otchere
+  status: active

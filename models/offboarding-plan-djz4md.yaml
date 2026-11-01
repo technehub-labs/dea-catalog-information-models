@@ -1,0 +1,30 @@
+model: offboarding-plan-djz4md
+record: dea:information-model-offboarding-plan-djz4md
+title: Offboarding Plan Information Model
+model_form: conceptual
+model_scope: Party & Relationship domain
+represents: objects:object-offboarding-plan-djz4md
+chain_stage: party-lifecycle
+attributes:
+- name: offboardingplandjz4mdId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the offboarding plan.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the offboarding plan where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the offboarding plan (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Party & Relationship domain domain, retire stage; object class
+    work-item.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-offboarding-plan-djz4md)
+- kind: repository-path
+  reference: models/offboarding-plan-djz4md.yaml

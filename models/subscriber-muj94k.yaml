@@ -1,0 +1,30 @@
+model: subscriber-muj94k
+record: dea:information-model-subscriber-muj94k
+title: Subscriber Information Model
+model_form: conceptual
+model_scope: Party & Relationship domain
+represents: objects:object-subscriber-muj94k
+chain_stage: party-lifecycle
+attributes:
+- name: subscribermuj94kId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the subscriber.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the subscriber where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the subscriber (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Party & Relationship domain domain, operate stage; object class
+    party.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-subscriber-muj94k)
+- kind: repository-path
+  reference: models/subscriber-muj94k.yaml

@@ -1,0 +1,30 @@
+model: patient-w8ry62
+record: dea:information-model-patient-w8ry62
+title: Patient Information Model
+model_form: conceptual
+model_scope: Party & Relationship domain
+represents: objects:object-patient-w8ry62
+chain_stage: party-lifecycle
+attributes:
+- name: patientw8ry62Id
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the patient.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the patient where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the patient (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Party & Relationship domain domain, operate stage; object class
+    party.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-patient-w8ry62)
+- kind: repository-path
+  reference: models/patient-w8ry62.yaml

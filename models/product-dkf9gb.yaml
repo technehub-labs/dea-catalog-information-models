@@ -1,0 +1,33 @@
+model: product-dkf9gb
+record: dea:information-model-product-dkf9gb
+title: Product Information Model
+model_form: conceptual
+model_scope: Product & Value domain
+represents: objects:object-product-dkf9gb
+chain_stage: offering
+attributes:
+- name: productdkf9gbId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the product.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the product where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the product (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Product & Value domain domain, operate stage; object class offering.'
+- name: productRefs
+  type: reference
+  cardinality: 0..*
+  definition: Product(s) this offering packages and prices.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-product-dkf9gb)
+- kind: repository-path
+  reference: models/product-dkf9gb.yaml

@@ -1,0 +1,30 @@
+model: business-case-et8p4e
+record: dea:information-model-business-case-et8p4e
+title: Business Case Information Model
+model_form: conceptual
+model_scope: Strategy & Direction domain
+represents: objects:object-business-case-et8p4e
+chain_stage: party-lifecycle
+attributes:
+- name: businesscaseet8p4eId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the business case.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the business case where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the business case (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Strategy & Direction domain domain, conceive stage; object class
+    work-item.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-business-case-et8p4e)
+- kind: repository-path
+  reference: models/business-case-et8p4e.yaml

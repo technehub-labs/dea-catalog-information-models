@@ -1,0 +1,30 @@
+model: transformation-plan-mpsz65
+record: dea:information-model-transformation-plan-mpsz65
+title: Transformation Plan Information Model
+model_form: conceptual
+model_scope: Strategy & Direction domain
+represents: objects:object-transformation-plan-mpsz65
+chain_stage: party-lifecycle
+attributes:
+- name: transformationplanmpsz65Id
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the transformation plan.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the transformation plan where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the transformation plan (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Strategy & Direction domain domain, operate stage; object class
+    work-item.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-transformation-plan-mpsz65)
+- kind: repository-path
+  reference: models/transformation-plan-mpsz65.yaml

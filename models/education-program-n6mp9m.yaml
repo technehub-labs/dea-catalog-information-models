@@ -1,0 +1,33 @@
+model: education-program-n6mp9m
+record: dea:information-model-education-program-n6mp9m
+title: Study Program Information Model
+model_form: conceptual
+model_scope: Product & Value domain
+represents: objects:object-education-program-n6mp9m
+chain_stage: offering
+attributes:
+- name: educationprogramn6mp9mId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the study program.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the study program where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the study program (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Product & Value domain domain, operate stage; object class offering.'
+- name: productRefs
+  type: reference
+  cardinality: 0..*
+  definition: Product(s) this offering packages and prices.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-education-program-n6mp9m)
+- kind: repository-path
+  reference: models/education-program-n6mp9m.yaml

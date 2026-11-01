@@ -1,0 +1,30 @@
+model: goal-h2zfhv
+record: dea:information-model-goal-h2zfhv
+title: Goal Information Model
+model_form: conceptual
+model_scope: Strategy & Direction domain
+represents: objects:object-goal-h2zfhv
+chain_stage: party-lifecycle
+attributes:
+- name: goalh2zfhvId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the goal.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the goal where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the goal (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Strategy & Direction domain domain, operate stage; object class
+    work-item.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-goal-h2zfhv)
+- kind: repository-path
+  reference: models/goal-h2zfhv.yaml

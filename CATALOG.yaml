@@ -2,8 +2,8 @@ catalog:
   abbreviation: IM
   counts:
     candidates: 0
-    canonical: 3
-    entities: 3
+    canonical: 74
+    entities: 74
     open_change_requests: 0
     research_files: 0
     retired: 0
@@ -19,10 +19,318 @@ catalog:
   entities:
   - candidate_count: 0
     canonical_count: 1
+    id: dea:information-model-application-eewde8
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-application-eewde8/dea:information-model-application-eewde8.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-asset-w887xr
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-asset-w887xr/dea:information-model-asset-w887xr.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-audit-finding-jd44zy
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-audit-finding-jd44zy/dea:information-model-audit-finding-jd44zy.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-benefit-entitlement-yx4ckm
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-benefit-entitlement-yx4ckm/dea:information-model-benefit-entitlement-yx4ckm.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-bill-of-material-9skzte
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-bill-of-material-9skzte/dea:information-model-bill-of-material-9skzte.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-budget-h77u8h
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-budget-h77u8h/dea:information-model-budget-h77u8h.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-business-case-et8p4e
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-business-case-et8p4e/dea:information-model-business-case-et8p4e.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-candidate-party-s8q2mk
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-candidate-party-s8q2mk/dea:information-model-candidate-party-s8q2mk.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-care-encounter-8enzdc
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-care-encounter-8enzdc/dea:information-model-care-encounter-8enzdc.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-citizen-2xqsse
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-citizen-2xqsse/dea:information-model-citizen-2xqsse.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-configuration-item-tsn3ex
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-configuration-item-tsn3ex/dea:information-model-configuration-item-tsn3ex.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-consent-record-gacq7d
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-consent-record-gacq7d/dea:information-model-consent-record-gacq7d.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-contract-w24y9z
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-contract-w24y9z/dea:information-model-contract-w24y9z.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-course-section-j4fdpq
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-course-section-j4fdpq/dea:information-model-course-section-j4fdpq.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-coverage-area-vf8sfv
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-coverage-area-vf8sfv/dea:information-model-coverage-area-vf8sfv.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-credit-note-k6nktp
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-credit-note-k6nktp/dea:information-model-credit-note-k6nktp.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:information-model-customer
     last_modified: '2026-11-01'
     lifecycle_status: active
     path: entities/v1-alpha/dea:information-model-customer/dea:information-model-customer.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-deposit-account-u6hdbe
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-deposit-account-u6hdbe/dea:information-model-deposit-account-u6hdbe.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-education-program-n6mp9m
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-education-program-n6mp9m/dea:information-model-education-program-n6mp9m.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-employee-phbzym
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-employee-phbzym/dea:information-model-employee-phbzym.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-environment-npd5vt
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-environment-npd5vt/dea:information-model-environment-npd5vt.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-feature-flag-p5gzf7
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-feature-flag-p5gzf7/dea:information-model-feature-flag-p5gzf7.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-forecast-um3az3
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-forecast-um3az3/dea:information-model-forecast-um3az3.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-goal-h2zfhv
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-goal-h2zfhv/dea:information-model-goal-h2zfhv.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-grant-nhdwg9
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-grant-nhdwg9/dea:information-model-grant-nhdwg9.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-improvement-proposal-cwcz6m
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-improvement-proposal-cwcz6m/dea:information-model-improvement-proposal-cwcz6m.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-incident-wudf9s
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-incident-wudf9s/dea:information-model-incident-wudf9s.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-insurance-claim-g5mag3
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-insurance-claim-g5mag3/dea:information-model-insurance-claim-g5mag3.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-interconnect-agreement-dvq2ce
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-interconnect-agreement-dvq2ce/dea:information-model-interconnect-agreement-dvq2ce.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -41,10 +349,483 @@ catalog:
     version: 1.0.0
   - candidate_count: 0
     canonical_count: 1
+    id: dea:information-model-journal-entry-khck7r
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-journal-entry-khck7r/dea:information-model-journal-entry-khck7r.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-lessons-learned-pvcj26
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-lessons-learned-pvcj26/dea:information-model-lessons-learned-pvcj26.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-license-na3j53
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-license-na3j53/dea:information-model-license-na3j53.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-loan-byjy28
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-loan-byjy28/dea:information-model-loan-byjy28.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-manufacturing-lot-pkbqev
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-manufacturing-lot-pkbqev/dea:information-model-manufacturing-lot-pkbqev.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-member-vbxqke
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-member-vbxqke/dea:information-model-member-vbxqke.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-network-asset-wee4fw
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-network-asset-wee4fw/dea:information-model-network-asset-wee4fw.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-offboarding-plan-djz4md
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-offboarding-plan-djz4md/dea:information-model-offboarding-plan-djz4md.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-onboarding-program-mrun5r
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-onboarding-program-mrun5r/dea:information-model-onboarding-program-mrun5r.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
     id: dea:information-model-order
     last_modified: '2026-11-01'
     lifecycle_status: active
     path: entities/v1-alpha/dea:information-model-order/dea:information-model-order.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-partner-cfhqx9
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-partner-cfhqx9/dea:information-model-partner-cfhqx9.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-party-credential-kaqfq8
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-party-credential-kaqfq8/dea:information-model-party-credential-kaqfq8.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-patient-w8ry62
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-patient-w8ry62/dea:information-model-patient-w8ry62.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-payment-kgsvrg
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-payment-kgsvrg/dea:information-model-payment-kgsvrg.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-performance-review-k3k7n6
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-performance-review-k3k7n6/dea:information-model-performance-review-k3k7n6.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-policy-nd2t4y
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-policy-nd2t4y/dea:information-model-policy-nd2t4y.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-prepaid-balance-k65673
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-prepaid-balance-k65673/dea:information-model-prepaid-balance-k65673.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-price-list-4bk48j
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-price-list-4bk48j/dea:information-model-price-list-4bk48j.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-product-dkf9gb
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-product-dkf9gb/dea:information-model-product-dkf9gb.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-production-machine-j5z9kv
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-production-machine-j5z9kv/dea:information-model-production-machine-j5z9kv.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-project-5hgzd3
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-project-5hgzd3/dea:information-model-project-5hgzd3.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-public-case-ae4yg8
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-public-case-ae4yg8/dea:information-model-public-case-ae4yg8.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-purchase-order-qf4tfa
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-purchase-order-qf4tfa/dea:information-model-purchase-order-qf4tfa.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-quote-gnngfe
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-quote-gnngfe/dea:information-model-quote-gnngfe.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-release-candidate-wed4tk
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-release-candidate-wed4tk/dea:information-model-release-candidate-wed4tk.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-requirement-9ukadu
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-requirement-9ukadu/dea:information-model-requirement-9ukadu.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-retail-store-6kzkfj
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-retail-store-6kzkfj/dea:information-model-retail-store-6kzkfj.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-return-uwz79t
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-return-uwz79t/dea:information-model-return-uwz79t.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-service-instance-j5uxmb
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-service-instance-j5uxmb/dea:information-model-service-instance-j5uxmb.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-service-number-6axyb2
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-service-number-6axyb2/dea:information-model-service-number-6axyb2.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-service-q8w4ce
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-service-q8w4ce/dea:information-model-service-q8w4ce.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-shipment-mb7wgn
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-shipment-mb7wgn/dea:information-model-shipment-mb7wgn.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-sim-profile-ja8k4x
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-sim-profile-ja8k4x/dea:information-model-sim-profile-ja8k4x.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-stock-keeping-unit-x6rq8r
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-stock-keeping-unit-x6rq8r/dea:information-model-stock-keeping-unit-x6rq8r.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-subscriber-muj94k
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-subscriber-muj94k/dea:information-model-subscriber-muj94k.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-subscription-3v98yb
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-subscription-3v98yb/dea:information-model-subscription-3v98yb.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-sunset-plan-34225t
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-sunset-plan-34225t/dea:information-model-sunset-plan-34225t.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-supplier-g7m7fu
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-supplier-g7m7fu/dea:information-model-supplier-g7m7fu.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-tariff-plan-ah5q9f
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-tariff-plan-ah5q9f/dea:information-model-tariff-plan-ah5q9f.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-tax-record-zwqfpa
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-tax-record-zwqfpa/dea:information-model-tax-record-zwqfpa.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-ticket-2cudww
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-ticket-2cudww/dea:information-model-ticket-2cudww.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-training-program-r8fpt3
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-training-program-r8fpt3/dea:information-model-training-program-r8fpt3.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-transformation-plan-mpsz65
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-transformation-plan-mpsz65/dea:information-model-transformation-plan-mpsz65.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-usage-record-nax3b6
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-usage-record-nax3b6/dea:information-model-usage-record-nax3b6.yaml
     research_count: 0
     retired_count: 0
     state: canonical
@@ -56,14 +837,227 @@ catalog:
   owner: TechNeHub Labs
   repository: https://github.com/technehub-labs/dea-catalog-information-models.git
   research_registers:
+  - entity_id: dea:information-model-application-eewde8
+    files: []
+    path: entities/v1-alpha/dea:information-model-application-eewde8/research/
+  - entity_id: dea:information-model-asset-w887xr
+    files: []
+    path: entities/v1-alpha/dea:information-model-asset-w887xr/research/
+  - entity_id: dea:information-model-audit-finding-jd44zy
+    files: []
+    path: entities/v1-alpha/dea:information-model-audit-finding-jd44zy/research/
+  - entity_id: dea:information-model-benefit-entitlement-yx4ckm
+    files: []
+    path: entities/v1-alpha/dea:information-model-benefit-entitlement-yx4ckm/research/
+  - entity_id: dea:information-model-bill-of-material-9skzte
+    files: []
+    path: entities/v1-alpha/dea:information-model-bill-of-material-9skzte/research/
+  - entity_id: dea:information-model-budget-h77u8h
+    files: []
+    path: entities/v1-alpha/dea:information-model-budget-h77u8h/research/
+  - entity_id: dea:information-model-business-case-et8p4e
+    files: []
+    path: entities/v1-alpha/dea:information-model-business-case-et8p4e/research/
+  - entity_id: dea:information-model-candidate-party-s8q2mk
+    files: []
+    path: entities/v1-alpha/dea:information-model-candidate-party-s8q2mk/research/
+  - entity_id: dea:information-model-care-encounter-8enzdc
+    files: []
+    path: entities/v1-alpha/dea:information-model-care-encounter-8enzdc/research/
+  - entity_id: dea:information-model-citizen-2xqsse
+    files: []
+    path: entities/v1-alpha/dea:information-model-citizen-2xqsse/research/
+  - entity_id: dea:information-model-configuration-item-tsn3ex
+    files: []
+    path: entities/v1-alpha/dea:information-model-configuration-item-tsn3ex/research/
+  - entity_id: dea:information-model-consent-record-gacq7d
+    files: []
+    path: entities/v1-alpha/dea:information-model-consent-record-gacq7d/research/
+  - entity_id: dea:information-model-contract-w24y9z
+    files: []
+    path: entities/v1-alpha/dea:information-model-contract-w24y9z/research/
+  - entity_id: dea:information-model-course-section-j4fdpq
+    files: []
+    path: entities/v1-alpha/dea:information-model-course-section-j4fdpq/research/
+  - entity_id: dea:information-model-coverage-area-vf8sfv
+    files: []
+    path: entities/v1-alpha/dea:information-model-coverage-area-vf8sfv/research/
+  - entity_id: dea:information-model-credit-note-k6nktp
+    files: []
+    path: entities/v1-alpha/dea:information-model-credit-note-k6nktp/research/
   - entity_id: dea:information-model-customer
     files: []
     path: entities/v1-alpha/dea:information-model-customer/research/
+  - entity_id: dea:information-model-deposit-account-u6hdbe
+    files: []
+    path: entities/v1-alpha/dea:information-model-deposit-account-u6hdbe/research/
+  - entity_id: dea:information-model-education-program-n6mp9m
+    files: []
+    path: entities/v1-alpha/dea:information-model-education-program-n6mp9m/research/
+  - entity_id: dea:information-model-employee-phbzym
+    files: []
+    path: entities/v1-alpha/dea:information-model-employee-phbzym/research/
+  - entity_id: dea:information-model-environment-npd5vt
+    files: []
+    path: entities/v1-alpha/dea:information-model-environment-npd5vt/research/
+  - entity_id: dea:information-model-feature-flag-p5gzf7
+    files: []
+    path: entities/v1-alpha/dea:information-model-feature-flag-p5gzf7/research/
+  - entity_id: dea:information-model-forecast-um3az3
+    files: []
+    path: entities/v1-alpha/dea:information-model-forecast-um3az3/research/
+  - entity_id: dea:information-model-goal-h2zfhv
+    files: []
+    path: entities/v1-alpha/dea:information-model-goal-h2zfhv/research/
+  - entity_id: dea:information-model-grant-nhdwg9
+    files: []
+    path: entities/v1-alpha/dea:information-model-grant-nhdwg9/research/
+  - entity_id: dea:information-model-improvement-proposal-cwcz6m
+    files: []
+    path: entities/v1-alpha/dea:information-model-improvement-proposal-cwcz6m/research/
+  - entity_id: dea:information-model-incident-wudf9s
+    files: []
+    path: entities/v1-alpha/dea:information-model-incident-wudf9s/research/
+  - entity_id: dea:information-model-insurance-claim-g5mag3
+    files: []
+    path: entities/v1-alpha/dea:information-model-insurance-claim-g5mag3/research/
+  - entity_id: dea:information-model-interconnect-agreement-dvq2ce
+    files: []
+    path: entities/v1-alpha/dea:information-model-interconnect-agreement-dvq2ce/research/
   - entity_id: dea:information-model-invoice
     files: []
     path: entities/v1-alpha/dea:information-model-invoice/research/
+  - entity_id: dea:information-model-journal-entry-khck7r
+    files: []
+    path: entities/v1-alpha/dea:information-model-journal-entry-khck7r/research/
+  - entity_id: dea:information-model-lessons-learned-pvcj26
+    files: []
+    path: entities/v1-alpha/dea:information-model-lessons-learned-pvcj26/research/
+  - entity_id: dea:information-model-license-na3j53
+    files: []
+    path: entities/v1-alpha/dea:information-model-license-na3j53/research/
+  - entity_id: dea:information-model-loan-byjy28
+    files: []
+    path: entities/v1-alpha/dea:information-model-loan-byjy28/research/
+  - entity_id: dea:information-model-manufacturing-lot-pkbqev
+    files: []
+    path: entities/v1-alpha/dea:information-model-manufacturing-lot-pkbqev/research/
+  - entity_id: dea:information-model-member-vbxqke
+    files: []
+    path: entities/v1-alpha/dea:information-model-member-vbxqke/research/
+  - entity_id: dea:information-model-network-asset-wee4fw
+    files: []
+    path: entities/v1-alpha/dea:information-model-network-asset-wee4fw/research/
+  - entity_id: dea:information-model-offboarding-plan-djz4md
+    files: []
+    path: entities/v1-alpha/dea:information-model-offboarding-plan-djz4md/research/
+  - entity_id: dea:information-model-onboarding-program-mrun5r
+    files: []
+    path: entities/v1-alpha/dea:information-model-onboarding-program-mrun5r/research/
   - entity_id: dea:information-model-order
     files: []
     path: entities/v1-alpha/dea:information-model-order/research/
+  - entity_id: dea:information-model-partner-cfhqx9
+    files: []
+    path: entities/v1-alpha/dea:information-model-partner-cfhqx9/research/
+  - entity_id: dea:information-model-party-credential-kaqfq8
+    files: []
+    path: entities/v1-alpha/dea:information-model-party-credential-kaqfq8/research/
+  - entity_id: dea:information-model-patient-w8ry62
+    files: []
+    path: entities/v1-alpha/dea:information-model-patient-w8ry62/research/
+  - entity_id: dea:information-model-payment-kgsvrg
+    files: []
+    path: entities/v1-alpha/dea:information-model-payment-kgsvrg/research/
+  - entity_id: dea:information-model-performance-review-k3k7n6
+    files: []
+    path: entities/v1-alpha/dea:information-model-performance-review-k3k7n6/research/
+  - entity_id: dea:information-model-policy-nd2t4y
+    files: []
+    path: entities/v1-alpha/dea:information-model-policy-nd2t4y/research/
+  - entity_id: dea:information-model-prepaid-balance-k65673
+    files: []
+    path: entities/v1-alpha/dea:information-model-prepaid-balance-k65673/research/
+  - entity_id: dea:information-model-price-list-4bk48j
+    files: []
+    path: entities/v1-alpha/dea:information-model-price-list-4bk48j/research/
+  - entity_id: dea:information-model-product-dkf9gb
+    files: []
+    path: entities/v1-alpha/dea:information-model-product-dkf9gb/research/
+  - entity_id: dea:information-model-production-machine-j5z9kv
+    files: []
+    path: entities/v1-alpha/dea:information-model-production-machine-j5z9kv/research/
+  - entity_id: dea:information-model-project-5hgzd3
+    files: []
+    path: entities/v1-alpha/dea:information-model-project-5hgzd3/research/
+  - entity_id: dea:information-model-public-case-ae4yg8
+    files: []
+    path: entities/v1-alpha/dea:information-model-public-case-ae4yg8/research/
+  - entity_id: dea:information-model-purchase-order-qf4tfa
+    files: []
+    path: entities/v1-alpha/dea:information-model-purchase-order-qf4tfa/research/
+  - entity_id: dea:information-model-quote-gnngfe
+    files: []
+    path: entities/v1-alpha/dea:information-model-quote-gnngfe/research/
+  - entity_id: dea:information-model-release-candidate-wed4tk
+    files: []
+    path: entities/v1-alpha/dea:information-model-release-candidate-wed4tk/research/
+  - entity_id: dea:information-model-requirement-9ukadu
+    files: []
+    path: entities/v1-alpha/dea:information-model-requirement-9ukadu/research/
+  - entity_id: dea:information-model-retail-store-6kzkfj
+    files: []
+    path: entities/v1-alpha/dea:information-model-retail-store-6kzkfj/research/
+  - entity_id: dea:information-model-return-uwz79t
+    files: []
+    path: entities/v1-alpha/dea:information-model-return-uwz79t/research/
+  - entity_id: dea:information-model-service-instance-j5uxmb
+    files: []
+    path: entities/v1-alpha/dea:information-model-service-instance-j5uxmb/research/
+  - entity_id: dea:information-model-service-number-6axyb2
+    files: []
+    path: entities/v1-alpha/dea:information-model-service-number-6axyb2/research/
+  - entity_id: dea:information-model-service-q8w4ce
+    files: []
+    path: entities/v1-alpha/dea:information-model-service-q8w4ce/research/
+  - entity_id: dea:information-model-shipment-mb7wgn
+    files: []
+    path: entities/v1-alpha/dea:information-model-shipment-mb7wgn/research/
+  - entity_id: dea:information-model-sim-profile-ja8k4x
+    files: []
+    path: entities/v1-alpha/dea:information-model-sim-profile-ja8k4x/research/
+  - entity_id: dea:information-model-stock-keeping-unit-x6rq8r
+    files: []
+    path: entities/v1-alpha/dea:information-model-stock-keeping-unit-x6rq8r/research/
+  - entity_id: dea:information-model-subscriber-muj94k
+    files: []
+    path: entities/v1-alpha/dea:information-model-subscriber-muj94k/research/
+  - entity_id: dea:information-model-subscription-3v98yb
+    files: []
+    path: entities/v1-alpha/dea:information-model-subscription-3v98yb/research/
+  - entity_id: dea:information-model-sunset-plan-34225t
+    files: []
+    path: entities/v1-alpha/dea:information-model-sunset-plan-34225t/research/
+  - entity_id: dea:information-model-supplier-g7m7fu
+    files: []
+    path: entities/v1-alpha/dea:information-model-supplier-g7m7fu/research/
+  - entity_id: dea:information-model-tariff-plan-ah5q9f
+    files: []
+    path: entities/v1-alpha/dea:information-model-tariff-plan-ah5q9f/research/
+  - entity_id: dea:information-model-tax-record-zwqfpa
+    files: []
+    path: entities/v1-alpha/dea:information-model-tax-record-zwqfpa/research/
+  - entity_id: dea:information-model-ticket-2cudww
+    files: []
+    path: entities/v1-alpha/dea:information-model-ticket-2cudww/research/
+  - entity_id: dea:information-model-training-program-r8fpt3
+    files: []
+    path: entities/v1-alpha/dea:information-model-training-program-r8fpt3/research/
+  - entity_id: dea:information-model-transformation-plan-mpsz65
+    files: []
+    path: entities/v1-alpha/dea:information-model-transformation-plan-mpsz65/research/
+  - entity_id: dea:information-model-usage-record-nax3b6
+    files: []
+    path: entities/v1-alpha/dea:information-model-usage-record-nax3b6/research/
   status: active
   version: 0.1.0

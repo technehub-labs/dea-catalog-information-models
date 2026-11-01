@@ -1,0 +1,30 @@
+model: tax-record-zwqfpa
+record: dea:information-model-tax-record-zwqfpa
+title: Tax Record Information Model
+model_form: conceptual
+model_scope: Finance & Accounting domain
+represents: objects:object-tax-record-zwqfpa
+chain_stage: financial
+attributes:
+- name: taxrecordzwqfpaId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the tax record.
+- name: name
+  type: string
+  cardinality: 0..1
+  definition: Display name or label of the tax record where one is held.
+- name: lifecycleState
+  type: 'enum: active'
+  cardinality: 1..1
+  definition: Lifecycle state of the tax record (active per the canonical record's state history).
+- name: ecfClassification
+  type: structure
+  cardinality: 1..1
+  definition: 'Classification context: Finance & Accounting domain domain, operate stage; object class
+    financial-instrument.'
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-tax-record-zwqfpa)
+- kind: repository-path
+  reference: models/tax-record-zwqfpa.yaml
