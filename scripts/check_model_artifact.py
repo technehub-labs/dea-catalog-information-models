@@ -23,7 +23,7 @@ import yaml
 
 REPO = Path(__file__).resolve().parent.parent
 MODEL_GLOB = "models/**/*.yaml"
-RECORD_GLOB = "entities/v1-alpha/*.yaml"
+RECORD_GLOB = "entities/v1-alpha/**/*.yaml"
 FORM_ENUM = {"conceptual", "logical", "schema", "ontology", "other"}
 BO_ID = re.compile(r"^objects:object-[a-z0-9-]+$")
 REQUIRED_ATTR_KEYS = {"name", "type", "cardinality", "definition"}

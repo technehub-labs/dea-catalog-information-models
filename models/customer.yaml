@@ -1,0 +1,45 @@
+model: customer
+record: dea:information-model-customer
+title: Customer Information Model
+model_form: conceptual
+model_scope: Customer domain
+represents: objects:object-customer-2qvphc
+attributes:
+- name: customerId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the customer.
+- name: partyType
+  type: 'enum: person | organization'
+  cardinality: 1..1
+  definition: Whether the customer is a natural person or an organization.
+- name: name
+  type: string
+  cardinality: 1..1
+  definition: Primary display name of the customer.
+- name: contactPoints
+  type: ContactPoint
+  cardinality: 0..*
+  definition: Reachable contact channels (address, email, phone) for the customer.
+- name: segments
+  type: Segment
+  cardinality: 0..*
+  definition: Commercial or behavioral segments the customer belongs to.
+- name: status
+  type: 'enum: prospect | active | suspended | closed'
+  cardinality: 1..1
+  definition: Lifecycle state of the customer relationship.
+- name: externalRefs
+  type: ExternalReference
+  cardinality: 0..*
+  definition: Identifiers for this customer in external or legacy systems.
+constraints:
+- A customer is either a person or an organization, never both (partyType is disjoint).
+- A suspended or closed customer retains its customerId and history; identifiers are never reused.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-customer-2qvphc)
+- kind: published-document
+  reference: TMF SID Customer domain (Customer, CustomerAccount classes); TMF629 Customer Management API
+- kind: repository-path
+  reference: models/customer.yaml
