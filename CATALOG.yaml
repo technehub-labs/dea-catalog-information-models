@@ -2,8 +2,8 @@ catalog:
   abbreviation: IM
   counts:
     candidates: 0
-    canonical: 0
-    entities: 0
+    canonical: 3
+    entities: 3
     open_change_requests: 0
     research_files: 0
     retired: 0
@@ -16,12 +16,54 @@ catalog:
   description: 'A formal model that specifies the structure, semantics, and constraints of information for a domain - the conceptual or logical blueprint from which Data Entities are shaped and Information Assets take form. Distinct from Information Class (the sensitivity/regulatory band) and Information Asset (the consumable form).
 
     '
-  entities: []
+  entities:
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-customer
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-customer/dea:information-model-customer.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-invoice
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-invoice/dea:information-model-invoice.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
+  - candidate_count: 0
+    canonical_count: 1
+    id: dea:information-model-order
+    last_modified: '2026-11-01'
+    lifecycle_status: active
+    path: entities/v1-alpha/dea:information-model-order/dea:information-model-order.yaml
+    research_count: 0
+    retired_count: 0
+    state: canonical
+    type: InformationModel
+    version: 1.0.0
   id: dea:catalog-information-models
   metamodel_version: 1.0.0
   name: Information Model
   owner: TechNeHub Labs
   repository: https://github.com/technehub-labs/dea-catalog-information-models.git
-  research_registers: []
+  research_registers:
+  - entity_id: dea:information-model-customer
+    files: []
+    path: entities/v1-alpha/dea:information-model-customer/research/
+  - entity_id: dea:information-model-invoice
+    files: []
+    path: entities/v1-alpha/dea:information-model-invoice/research/
+  - entity_id: dea:information-model-order
+    files: []
+    path: entities/v1-alpha/dea:information-model-order/research/
   status: active
   version: 0.1.0

@@ -1,0 +1,45 @@
+model: order
+record: dea:information-model-order
+title: Order Information Model
+model_form: conceptual
+model_scope: Sales-order domain
+represents: objects:object-order-bpy4g4
+attributes:
+- name: orderId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the order.
+- name: orderDate
+  type: dateTime
+  cardinality: 1..1
+  definition: When the order was placed.
+- name: customerRef
+  type: identifier
+  cardinality: 1..1
+  definition: The customer who placed the order.
+- name: orderLines
+  type: OrderLineItem
+  cardinality: 1..*
+  definition: Ordered items with quantity, price, and fulfilment state.
+- name: status
+  type: 'enum: captured | confirmed | in-fulfilment | fulfilled | cancelled'
+  cardinality: 1..1
+  definition: Lifecycle state of the order.
+- name: requestedFulfilmentDate
+  type: date
+  cardinality: 0..1
+  definition: Date fulfilment was requested by the customer.
+- name: totalValue
+  type: Money
+  cardinality: 0..1
+  definition: Committed order value; finalized at confirmation.
+constraints:
+- An order requires at least one order line to be confirmed.
+- A cancelled order retains its lines and history; nothing is deleted.
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-order-bpy4g4)
+- kind: published-document
+  reference: TMF SID Product Order domain (ProductOrder); TMF622 Product Ordering API
+- kind: repository-path
+  reference: models/order.yaml

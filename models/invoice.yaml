@@ -1,0 +1,50 @@
+model: invoice
+record: dea:information-model-invoice
+title: Invoice Information Model
+model_form: conceptual
+model_scope: Billing domain
+represents: objects:object-invoice-z3fwgb
+attributes:
+- name: invoiceId
+  type: identifier
+  cardinality: 1..1
+  definition: System-wide unique identifier for the invoice.
+- name: issuedDate
+  type: date
+  cardinality: 1..1
+  definition: Date the invoice was issued to the customer.
+- name: dueDate
+  type: date
+  cardinality: 0..1
+  definition: Date payment is due; derived from payment terms.
+- name: accountRef
+  type: identifier
+  cardinality: 1..1
+  definition: The billing account the invoice is issued against.
+- name: lineItems
+  type: InvoiceLineItem
+  cardinality: 1..*
+  definition: Charged lines (products, services, fees, adjustments) on the invoice.
+- name: totalAmount
+  type: Money
+  cardinality: 1..1
+  definition: Total amount due; equals the sum of line items net of adjustments.
+- name: currency
+  type: string
+  cardinality: 1..1
+  definition: ISO 4217 currency of the amounts.
+- name: status
+  type: 'enum: draft | issued | partially-paid | paid | void'
+  cardinality: 1..1
+  definition: Payment lifecycle state of the invoice.
+constraints:
+- totalAmount must equal the sum of lineItems amounts net of adjustments.
+- An invoice references exactly one billing account.
+- A voided invoice is retained and never deleted (audit).
+sources:
+- kind: system-of-record
+  reference: dea-catalog-business-objects (canonical record objects:object-invoice-z3fwgb)
+- kind: published-document
+  reference: TMF SID Billing domain (Bill, Invoice classes); TMF678 Customer Bill Management API
+- kind: repository-path
+  reference: models/invoice.yaml
