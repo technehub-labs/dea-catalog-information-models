@@ -16,13 +16,12 @@ evidence:
   sources:
   - kind: system-of-record
     reference: dea-catalog-business-objects (canonical record objects:object-invoice-z3fwgb)
-  - kind: published-document
-    reference: TMF SID Billing domain (Bill, Invoice classes); TMF678 Customer Bill Management API
   - kind: repository-path
     reference: models/invoice.yaml
   rationale: 'Two-part evidence: provenance is the canonical Business Object record (objects:object-invoice-z3fwgb)
-    plus the TMF published authority for the domain; the committed artifact at models/invoice.yaml is
-    the model itself. Attribute definitions corroborated against the TMF anchor at admission.'
+    — the semantic authority for invoice information — plus the committed artifact at models/invoice.yaml.
+    Corroboration is internal: the BO definition and the sibling models along the Agreement→Offering→Product→Service→Resource→Entity
+    chain (chain position: entity).'
 provenance:
   ladder_passage:
   - stage: candidate
@@ -30,7 +29,7 @@ provenance:
     actor: Emmanuel A. Otchere
   - stage: corroborated
     date: '2026-11-01'
-    actor: Emmanuel A. Otchere
+    actor: Emmanuel A. Otchere, corroboration re-based to internal chain evidence (CR-IM-CAT-05)
   - stage: reviewed
     date: '2026-11-01'
     actor: Emmanuel A. Otchere

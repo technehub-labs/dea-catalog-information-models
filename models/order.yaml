@@ -39,7 +39,6 @@ constraints:
 sources:
 - kind: system-of-record
   reference: dea-catalog-business-objects (canonical record objects:object-order-bpy4g4)
-- kind: published-document
-  reference: TMF SID Product Order domain (ProductOrder); TMF622 Product Ordering API
 - kind: repository-path
   reference: models/order.yaml
+chain_position: entity

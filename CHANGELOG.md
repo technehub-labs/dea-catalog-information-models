@@ -5,6 +5,11 @@ All notable changes to this catalog are documented here. Format follows
 
 ## [Unreleased]
 
+### `CR-IM-CAT-05` — scope amendment (full BO coverage, chain lens, TMF withdrawn)
+
+Owner-directed: initial scope = ALL 74 canonical Business Objects tranched by ECF domain; the Agreement→Offering→Product→Service→Resource→Entity chain is the modeling lens (chain position per artifact); TMF anchoring withdrawn, corroboration re-based to internal (BO definition + chain neighbours). Pilot records/artifacts/READMEs re-based. Zero new records; 7 domain tranches follow.
+
+
 ### `CR-IM-CAT-04` — pilot tranche (Customer, Invoice, Order)
 
 First three canonical InformationModel records under the CR-IM-CAT-03 contract: conceptual-form models for the Customer, Invoice, and Order business objects, each with a full attribute dictionary, constraints, a represents assertion onto the canonical BO id, and two-part evidence (BO record + TMF published authority + committed artifact). dea:structures assertions deferred until downstream stand-ups. CATALOG.yaml: 3 canonical.

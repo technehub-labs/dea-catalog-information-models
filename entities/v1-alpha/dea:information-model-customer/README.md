@@ -16,10 +16,9 @@
 ## Evidence
 
 - system-of-record: `dea-catalog-business-objects` (canonical record objects:object-customer-2qvphc)
-- published-document: TMF SID Customer domain (Customer, CustomerAccount classes); TMF629 Customer Management API
 - repository-path: `models/customer.yaml`
 
-Two-part evidence: the canonical Business Object record is the semantic authority; the committed artifact is the model itself.
+Two-part evidence: the canonical Business Object record is the semantic authority; the committed artifact is the model itself. Corroboration: internal — the BO definition and the sibling models along the Agreement→Offering→Product→Service→Resource→Entity chain (CR-IM-CAT-05).
 
 ## Classification-or-relationships
 
