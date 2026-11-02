@@ -11,6 +11,7 @@
 | Model form | conceptual |
 | Model scope | Customer domain |
 | Version | 1.0.0 |
+| Chain stage | party-lifecycle |
 | Lifecycle status | active |
 
 ## Evidence
