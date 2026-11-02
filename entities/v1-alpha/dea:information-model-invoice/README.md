@@ -11,6 +11,7 @@
 | Model form | conceptual |
 | Model scope | Billing domain |
 | Version | 1.0.0 |
+| Chain stage | financial |
 | Lifecycle status | active |
 
 ## Evidence

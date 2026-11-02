@@ -196,7 +196,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:information-model-customer
-    last_modified: '2026-11-01'
+    last_modified: '2026-11-02'
     lifecycle_status: active
     path: entities/v1-alpha/dea:information-model-customer/dea:information-model-customer.yaml
     research_count: 0
@@ -339,7 +339,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:information-model-invoice
-    last_modified: '2026-11-01'
+    last_modified: '2026-11-02'
     lifecycle_status: active
     path: entities/v1-alpha/dea:information-model-invoice/dea:information-model-invoice.yaml
     research_count: 0
@@ -449,7 +449,7 @@ catalog:
   - candidate_count: 0
     canonical_count: 1
     id: dea:information-model-order
-    last_modified: '2026-11-01'
+    last_modified: '2026-11-02'
     lifecycle_status: active
     path: entities/v1-alpha/dea:information-model-order/dea:information-model-order.yaml
     research_count: 0
